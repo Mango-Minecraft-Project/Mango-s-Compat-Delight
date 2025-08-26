@@ -7,21 +7,18 @@ import dev.ftb.mods.ftbultimine.api.shape.ShapeContext;
 import dev.ftb.mods.ftbultimine.client.PlatformUtil;
 import dev.ftb.mods.ftbultimine.config.FTBUltimineServerConfig;
 import net.minecraft.core.BlockPos;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
-import vectorwing.farmersdelight.common.block.RichSoilBlock;
 import vectorwing.farmersdelight.common.registry.ModBlocks;
 
 import java.util.Collection;
 
-public enum FarmerDelightRightClickHandler implements RightClickHandler {
+public enum FDRightClickHandler implements RightClickHandler {
     INSTANCE;
 
     @Override

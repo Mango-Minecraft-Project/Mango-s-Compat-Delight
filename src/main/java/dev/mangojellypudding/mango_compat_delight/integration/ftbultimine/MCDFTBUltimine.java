@@ -4,8 +4,17 @@ import dev.ftb.mods.ftbultimine.api.crop.RegisterCropLikeEvent;
 import dev.ftb.mods.ftbultimine.api.rightclick.RegisterRightClickHandlerEvent;
 
 public class MCDFTBUltimine {
-    public static void init() {
-        RegisterRightClickHandlerEvent.REGISTER.register(dispatcher -> dispatcher.registerHandler(FarmerDelightRightClickHandler.INSTANCE));
-        RegisterCropLikeEvent.REGISTER.register(dispatcher -> dispatcher.registerHandler(FarmerDelightCropLikeHandler.INSTANCE));
+    public MCDFTBUltimine() {
+        RegisterRightClickHandlerEvent.REGISTER.register(this::registerRightClickHandlers);
+        RegisterCropLikeEvent.REGISTER.register(this::registerCropLikeEvent);
+    }
+
+    private void registerCropLikeEvent(RegisterCropLikeEvent.Dispatcher dispatcher) {
+        dispatcher.registerHandler(FDMushroomColonyLikeHandler.INSTANCE);
+    }
+
+    private void registerRightClickHandlers(RegisterRightClickHandlerEvent.Dispatcher dispatcher) {
+        dispatcher.registerHandler(FDRightClickHandler.INSTANCE);
+        dispatcher.registerHandler(FDCropHarvesting.INSTANCE);
     }
 }

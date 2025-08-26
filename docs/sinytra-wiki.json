@@ -1,0 +1,10 @@
+{
+  "id": "mango_compat_delight",
+  "platforms": {
+    "modrinth": "mangos-compat-delight"
+  },
+  "modid": "mango_compat_delight",
+  "owners": [
+    "EvanHsieh0415"
+  ]
+}

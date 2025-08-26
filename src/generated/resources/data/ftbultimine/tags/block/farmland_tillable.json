@@ -1,0 +1,11 @@
+{
+  "neoforge:conditions": [
+    {
+        "type": "neoforge:mod_loaded",
+        "modid": "ftbultimine"
+    }
+  ],
+  "values": [
+    "farmersdelight:rich_soil"
+  ]
+}

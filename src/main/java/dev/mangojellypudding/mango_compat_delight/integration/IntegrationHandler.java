@@ -9,7 +9,7 @@ public class IntegrationHandler {
     public static void init() {
         if (MCDUtils.Platform.isLoaded("ftbultimine")) {
             LOGGER.info("[Mango's Compat Delight] FTB Ultimine detected, initializing integration.");
-            MCDFTBUltimine.init();
+            new MCDFTBUltimine();
         }
     }
 }

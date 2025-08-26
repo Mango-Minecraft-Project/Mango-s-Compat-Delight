@@ -14,7 +14,7 @@ import vectorwing.farmersdelight.common.block.MushroomColonyBlock;
 
 import java.util.List;
 
-public enum FarmerDelightCropLikeHandler implements CropLikeHandler {
+public enum FDMushroomColonyLikeHandler implements CropLikeHandler {
     INSTANCE;
 
     @Override
