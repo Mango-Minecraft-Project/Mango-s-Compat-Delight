@@ -10,7 +10,7 @@ public class MCDFTBUltimine {
     }
 
     private void registerCropLikeEvent(RegisterCropLikeEvent.Dispatcher dispatcher) {
-        dispatcher.registerHandler(FDMushroomColonyLikeHandler.INSTANCE);
+//        dispatcher.registerHandler(FDMushroomColonyLikeHandler.INSTANCE);
     }
 
     private void registerRightClickHandlers(RegisterRightClickHandlerEvent.Dispatcher dispatcher) {
